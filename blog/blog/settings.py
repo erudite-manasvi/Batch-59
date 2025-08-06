@@ -41,7 +41,8 @@ INSTALLED_APPS = [
 
 
     'rest_framework',
-    'Form_app'
+    'Form_app',
+    'Session_app'
 ]
 
 MIDDLEWARE = [
