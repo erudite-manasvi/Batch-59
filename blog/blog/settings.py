@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'Form_app',
     'Session_app',
-    "JWT_app"
+    "JWT_app",
+    'Signal_app'
 ]
 
 REST_FRAMEWORK = {
