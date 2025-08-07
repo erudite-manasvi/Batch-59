@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-45c6t&ccocib)_scpi#ukwd$&2hqo0+@oyn2xh-!^kb*^!dm0='
+SECRET_KEY = 'dbjdbjdbcjdkebvedkjnmoefjiouiruiriuryuy47r87267y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -42,8 +42,16 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'Form_app',
-    'Session_app'
+    'Session_app',
+    "JWT_app"
 ]
+
+REST_FRAMEWORK = {
+
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
